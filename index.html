@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>starbucks</title>
+  </head>
+<body>
+    <div class="circulo" ></div>
+    <img src="./img/logo.png" alt="logo-starbucks" class="logo" />
+
+    <div class="conteudo" >
+        <div id="caixa-texto">
+        <h2>
+            it's not just coffee <br />
+            it's <span> starbucks </span>
+        </h2>
+        <p>
+        Find out what makes starbucks so unique, our <br> 
+        commitment with human conexion and quality<br>  
+        coffee, our cozy coffehouses and ours <br>
+        delicious coffee that might be enjoyed at home.
+        </p>
+        <button class="button" > Read article</button>
+        </div>
+
+        <div class="caixa-imagem"  >
+        <img src="./img/img1.png" alt="copo0-starbucks" class="starbucks" />
+        </div>
+    </div>
+
+    <div class="menu" >
+      <img src="./img/thumb1.png" alt="copo1-starbucks" class="botao-menu" onclick="trocaImagem('./img/thumb1.png');trocaCor('#017143')"/>
+      <img src="./img/thumb2.png" alt="copo2-starbucks" class="botao-menu" onclick="trocaImagem('./img/thumb2.png');trocaCor('#eb7495')"/>
+      <img src="./img/thumb3.png" alt="copo3-starbucks" class="botao-menu"onclick="trocaImagem('./img/thumb3.png');trocaCor('#d752b1')"/>
+    </div>
+</body> 
+  <script>
+     let imagem = document.querySelector(".starbucks") 
+     let circulo = document.querySelector(".circulo")
+
+        function trocaImagem(endereco){
+           imagem.src = endereco
+
+        }
+        
+        function trocaCor(cor){
+          circulo.style.background = cor
+        }
+
+
+
+  </script>
+</html>
